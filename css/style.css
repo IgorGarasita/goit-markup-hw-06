@@ -716,8 +716,11 @@ img {
 .input-wrap {
   position: relative;
 }
-.modal-field {
-  margin-bottom: 12px;
+.modal-field:not(:first-child) {
+  margin-top: 10px;
+}
+.modal-fields {
+  margin-top: 20px;
 }
 .modal-label {
   display: block;
@@ -729,6 +732,7 @@ img {
   margin-bottom: 4px;
 }
 .modal-text {
+  display: block;
   width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -752,6 +756,7 @@ img {
   letter-spacing: 0.03em;
   color: #757575;
   cursor: pointer;
+  justify-content: center;
 }
 .modal-text:focus {
   border-color: var(--accent-color);
@@ -801,7 +806,7 @@ img {
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px 55px 10px 56px;
+  padding: 10px 52px 10px 52px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
